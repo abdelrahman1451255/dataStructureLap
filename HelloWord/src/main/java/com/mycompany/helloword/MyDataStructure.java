@@ -49,10 +49,29 @@ public class MyDataStructure {
         
     }
     public void search(String x){
+        boolean y=false;
         for (int i = 0; i < lastindex; i++) {
             if(x.equals(names[i])){
-                System.out.println("element is in the data structure");
+                y=true;
             }
         }
+        if (y) {
+                System.out.println("element is in the data structure");
+        }
+        else
+        {
+            
+                System.out.println("element isn't in the data structure");
+        }
+    }
+    public boolean isEmpty(){
+        if (lastindex==0) {
+    return true;
+        }
+        else
+    return false;
+    }
+    public int size(){
+    return lastindex;
     }
 }
